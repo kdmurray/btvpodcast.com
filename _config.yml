@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Behind the Voice
+subtitle: Get to know your favourite podcasters
 description:
-author: John Doe
-language:
-timezone:
+author: Keith Murray
+language: en
+timezone: America/Vancouver
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://btvpodcast.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:title/
 permalink_defaults:
 
 # Directory
@@ -44,9 +44,10 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: episodes
 category_map:
 tag_map:
+
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -57,7 +58,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
+per_page: 5
 pagination_dir: page
 
 # Extensions
@@ -65,10 +66,23 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
+##FEED
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+####PLUGINS####
+##Prism
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'default'
 
 ##Podcast
 podcast_title: The TESTCAST
