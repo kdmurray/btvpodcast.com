@@ -69,3 +69,19 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+##Podcast
+podcast_title: The TESTCAST
+podcast_subtitle: Testing Casts since 2017
+podcast_author: Knightwise
+podcast_description: This is a podcast about testcasting.
+podcast_category: Technology
+podcast_subcategory: Podcasting
+podcast_owner_name: Keith Murray
+podcast_owner_email: kdmurray@gmail.com
+podcast_album_art: /media/graphics/pod-albumart.png
+podcast:
+    type: rss2
+    path: podcast.xml
+    limit: 20
+    hub:
